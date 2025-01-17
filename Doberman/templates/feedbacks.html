@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+</head>
+<body>
+    <h1>Відгуки</h1>
+    <ul>
+        {% for feedback in feedbacks %}
+            <li><strong>{{ feedback.name }}</strong>: {{ feedback.feedback }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

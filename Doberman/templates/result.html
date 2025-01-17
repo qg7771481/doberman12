@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Poll Results</h1>
+    <ul>
+        {% for option, count in votes.items() %}
+        <li>{{ option }}: {{ count }} votes</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

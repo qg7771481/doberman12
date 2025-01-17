@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Редагувати страву</title>
+</head>
+<body>
+    <h2>Редагувати страву</h2>
+    <form method="POST">
+        <label for="name">Назва страви:</label>
+        <input type="text" name="name" id="name" value="{{ dish[1] }}" required><br><br>
+        <label for="description">Опис:</label>
+        <textarea name="description" id="description" required>{{ dish[2] }}</textarea><br><br>
+        <label for="price">Ціна:</label>
+        <input type="number" name="price" id="price" value="{{ dish[3] }}" required><br><br>
+        <button type="submit">Оновити страву</button>
+    </form>
+</body>
+</html>
